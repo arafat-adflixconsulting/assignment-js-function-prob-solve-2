@@ -25,7 +25,7 @@ function totalFine(fare) {
 let f = -150;
 let vara = totalFine(f);
 // console.log(vara);
-// console.log(totalFine(50));
+// console.log(totalFine(200));
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -47,7 +47,7 @@ function onlyCharacter(str) {
   }
 }
 
-// console.log(onlyCharacter(" ha ck m e 1 @ru.c  n  "));
+// console.log(onlyCharacter("Cy   bar- At  tac k  "));
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -113,7 +113,7 @@ function isSame(arr1, arr2) {
   return true;
 }
 
-// console.log(isSame([1, undefined, 3], [1, null, 3]));
+// console.log(isSame({ data: [2, 5, 6] }, [2, 5, 6]));
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -138,7 +138,7 @@ function resultReport(marks) {
   let failMarks = [];
   for (let i = 0; i < marks.length; i++) {
     sum = sum + marks[i];
-    if (marks[i] > 40) {
+    if (marks[i] >= 40) {
       passMarks.push(marks[i]);
     } else {
       failMarks.push(marks[i]);
